@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      background: #172554;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h2 {
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #2563eb, #172554);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: white;
+      color: #2563eb;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #dbeafe;
+    }
+
+    /* Skills */
+    .skills {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .skills h2 {
+      font-size: 35px;
+      margin-bottom: 10px;
+      color: #172554;
+    }
+
+    .skills > p {
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .skill-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .skill-card h3 {
+      color: #2563eb;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .skill-card p {
+      color: #666;
+    }
+
+    /* Skill bars */
+    .progress {
+      width: 100%;
+      height: 10px;
+      background: #e5e7eb;
+      border-radius: 10px;
+      margin-top: 15px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      background: #2563eb;
+      border-radius: 10px;
+    }
+
+    .html { width: 90%; }
+    .css { width: 85%; }
+    .javascript { width: 75%; }
+    .design { width: 80%; }
+
+    /* Contact */
+    .contact {
+      padding: 60px 20px;
+      text-align: center;
+      background: #172554;
+      color: white;
+    }
+
+    .contact h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      color: #cbd5e1;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav ul {
+        gap: 15px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>MySkills</h2>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div>
+      <h1>My Skills</h1>
+      <p>
+        Welcome to my skills page. I enjoy learning new technologies,
+        creating websites, and developing my creative skills.
+      </p>
+
+      <a href="#skills" class="btn">View My Skills</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>What I Can Do</h2>
+    <p>Here are some of my main skills and abilities.</p>
+
+    <div class="skill-container">
+
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <p>I can create structured and accessible web pages.</p>
+
+        <div class="progress">
+          <div class="bar html"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <p>I can design responsive and attractive websites.</p>
+
+        <div class="progress">
+          <div class="bar css"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>I can add interactive features and functionality.</p>
+
+        <div class="progress">
+          <div class="bar javascript"></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Design</h3>
+        <p>I enjoy creating clean and user-friendly designs.</p>
+
+        <div class="progress">
+          <div class="bar design"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+    <p>Thank you for visiting my skills page!</p>
+    <a href="mailto:example@email.com" class="btn">Contact Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 My Skills. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
