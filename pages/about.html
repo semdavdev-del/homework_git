@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>About Card</title>
+      <style>
+            * {
+                  box-sizing: border-box;
+            }
+
+            body {
+                  margin: 0;
+                  min-height: 100vh;
+                  display: grid;
+                  place-items: center;
+                  font-family: Arial, sans-serif;
+                  background: linear-gradient(135deg, #f4f7ff, #e9ecff);
+            }
+
+            .card {
+                  width: 320px;
+                  background: #ffffff;
+                  border-radius: 18px;
+                  box-shadow: 0 12px 30px rgba(56, 77, 110, 0.15);
+                  overflow: hidden;
+                  transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            .card:hover {
+                  transform: translateY(-4px);
+                  box-shadow: 0 18px 35px rgba(56, 77, 110, 0.2);
+            }
+
+            .card-image {
+                  height: 180px;
+                  background: linear-gradient(135deg, #6a5cff, #8e7dff);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-size: 48px;
+                  font-weight: bold;
+            }
+
+            .card-content {
+                  padding: 22px 20px 24px;
+            }
+
+            .tag {
+                  display: inline-block;
+                  background: #eef2ff;
+                  color: #4f46e5;
+                  padding: 6px 10px;
+                  border-radius: 999px;
+                  font-size: 12px;
+                  font-weight: 700;
+                  letter-spacing: 0.5px;
+            }
+
+            .card h2 {
+                  margin: 14px 0 10px;
+                  font-size: 26px;
+                  color: #1f2937;
+            }
+
+            .card p {
+                  margin: 0 0 18px;
+                  line-height: 1.6;
+                  color: #6b7280;
+                  font-size: 15px;
+            }
+
+            .card-actions {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+            }
+
+            .price {
+                  font-size: 24px;
+                  font-weight: 700;
+                  color: #111827;
+            }
+
+            .btn {
+                  text-decoration: none;
+                  background: #4f46e5;
+                  color: white;
+                  padding: 10px 18px;
+                  border-radius: 10px;
+                  font-weight: 600;
+                  transition: background 0.2s ease;
+            }
+
+            .btn:hover {
+                  background: #4338ca;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="card">
+            <div class="card-image">A</div>
+            <div class="card-content">
+                  <span class="tag">NEW</span>
+                  <h2>Creative Card</h2>
+                  <p>
+                        A modern card design with a clean layout, soft shadows, and a simple call-to-action.
+                  </p>
+                  <div class="card-actions">
+                        <div class="price">$29</div>
+                        <a href="#" class="btn">Buy Now</a>
+                  </div>
+            </div>
+      </div>
+</body>
+
+</html>
