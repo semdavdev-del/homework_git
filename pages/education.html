@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Education</title>
+      <style>
+            * {
+                  box-sizing: border-box;
+            }
+
+            body {
+                  margin: 0;
+                  min-height: 100vh;
+                  display: grid;
+                  place-items: center;
+                  background: linear-gradient(135deg, #eefaf7, #f5f0ff);
+                  font-family: Arial, sans-serif;
+            }
+
+            .edu-card {
+                  width: 340px;
+                  background: #ffffff;
+                  border-radius: 22px;
+                  overflow: hidden;
+                  box-shadow: 0 16px 35px rgba(31, 41, 55, 0.12);
+                  transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            .edu-card:hover {
+                  transform: translateY(-5px);
+                  box-shadow: 0 20px 40px rgba(31, 41, 55, 0.18);
+            }
+
+            .edu-image {
+                  height: 200px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: linear-gradient(135deg, #10b981, #14b8a6);
+                  color: #fff;
+                  font-size: 52px;
+                  font-weight: bold;
+            }
+
+            .edu-content {
+                  padding: 22px 20px 24px;
+            }
+
+            .edu-tag {
+                  display: inline-block;
+                  background: #ecfdf5;
+                  color: #047857;
+                  padding: 6px 10px;
+                  border-radius: 999px;
+                  font-size: 12px;
+                  font-weight: 700;
+                  letter-spacing: 0.5px;
+            }
+
+            .edu-title {
+                  margin: 14px 0 10px;
+                  font-size: 28px;
+                  color: #111827;
+            }
+
+            .edu-desc {
+                  margin: 0 0 18px;
+                  color: #6b7280;
+                  line-height: 1.6;
+                  font-size: 15px;
+            }
+
+            .edu-footer {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+            }
+
+            .duration {
+                  font-size: 18px;
+                  font-weight: 700;
+                  color: #065f46;
+            }
+
+            .enroll-btn {
+                  text-decoration: none;
+                  background: #10b981;
+                  color: white;
+                  padding: 10px 16px;
+                  border-radius: 10px;
+                  font-weight: 700;
+                  transition: background 0.2s ease;
+            }
+
+            .enroll-btn:hover {
+                  background: #059669;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="edu-card">
+            <div class="edu-image">E</div>
+            <div class="edu-content">
+                  <span class="edu-tag">ONLINE COURSE</span>
+                  <h2 class="edu-title">Web Development</h2>
+                  <p class="edu-desc">
+                        Learn HTML, CSS, and JavaScript to build modern websites and interactive user experiences.
+                  </p>
+                  <div class="edu-footer">
+                        <div class="duration">8 Weeks</div>
+                        <a href="#" class="enroll-btn">Enroll Now</a>
+                  </div>
+            </div>
+      </div>
+</body>
+
+</html>
