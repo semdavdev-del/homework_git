@@ -59,7 +59,10 @@ body {
   color: #2563eb;
 }
 
+<<<<<<< HEAD
 /* Active underline */
+=======
+>>>>>>> 1c436cefd029b2b1da04fe3f929ef162ba9b94b3
 .nav-menu a.active::after {
   content: "";
   position: absolute;
@@ -119,6 +122,7 @@ body {
 /* ========================================
    RESET & GLOBAL STYLES
    ======================================== */
+
 * {
       margin: 0;
       padding: 0;
@@ -148,6 +152,10 @@ h6 {
       font-weight: 700;
       margin-bottom: 1rem;
       color: #1a1a1a;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
 }
 
 h1 {
@@ -191,9 +199,6 @@ a:hover {
       text-decoration: underline;
 }
 
-/* ========================================
-   NAVIGATION
-   ======================================== */
 nav {
       position: fixed;
       top: 0;
@@ -239,9 +244,6 @@ nav a.active {
       color: white;
 }
 
-/* ========================================
-   MAIN LAYOUT
-   ======================================== */
 main {
       margin-top: 70px;
       min-height: calc(100vh - 70px);
@@ -337,4 +339,5 @@ body {
       font-size: 18px;
       font-weight: 700;
       color: #065f46;
+    background-color: #fff;
 }
