@@ -1,113 +1,91 @@
- * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+* {
+                  box-sizing: border-box;
+            }
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #2563eb, #7c3aed);
-    }
+            body {
+                  margin: 0;
+                  min-height: 100vh;
+                  display: grid;
+                  place-items: center;
+                  font-family: Arial, sans-serif;
+                  background: linear-gradient(135deg, #f4f7ff, #e9ecff);
+            }
 
-    .login-container {
-      width: 380px;
-      padding: 40px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
+            .card {
+                  width: 320px;
+                  background: #ffffff;
+                  border-radius: 18px;
+                  box-shadow: 0 12px 30px rgba(56, 77, 110, 0.15);
+                  overflow: hidden;
+                  transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
 
-    .login-container h1 {
-      text-align: center;
-      margin-bottom: 10px;
-      color: #1e293b;
-    }
+            .card:hover {
+                  transform: translateY(-4px);
+                  box-shadow: 0 18px 35px rgba(56, 77, 110, 0.2);
+            }
 
-    .login-container .subtitle {
-      text-align: center;
-      color: #64748b;
-      margin-bottom: 30px;
-    }
+            .card-image {
+                  height: 180px;
+                  background: linear-gradient(135deg, #6a5cff, #8e7dff);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-size: 48px;
+                  font-weight: bold;
+            }
 
-    .input-box {
-      margin-bottom: 20px;
-    }
+            .card-content {
+                  padding: 22px 20px 24px;
+            }
 
-    .input-box label {
-      display: block;
-      margin-bottom: 8px;
-      color: #334155;
-      font-weight: bold;
-    }
+            .tag {
+                  display: inline-block;
+                  background: #eef2ff;
+                  color: #4f46e5;
+                  padding: 6px 10px;
+                  border-radius: 999px;
+                  font-size: 12px;
+                  font-weight: 700;
+                  letter-spacing: 0.5px;
+            }
 
-    .input-box input {
-      width: 100%;
-      padding: 13px;
-      border: 1px solid #cbd5e1;
-      border-radius: 10px;
-      font-size: 16px;
-      outline: none;
-    }
+            .card h2 {
+                  margin: 14px 0 10px;
+                  font-size: 26px;
+                  color: #1f2937;
+            }
 
-    .input-box input:focus {
-      border-color: #2563eb;
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-    }
+            .card p {
+                  margin: 0 0 18px;
+                  line-height: 1.6;
+                  color: #6b7280;
+                  font-size: 15px;
+            }
 
-    .options {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 25px;
-      font-size: 14px;
-    }
+            .card-actions {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+            }
 
-    .remember {
-      display: flex;
-      gap: 6px;
-      align-items: center;
-    }
+            .price {
+                  font-size: 24px;
+                  font-weight: 700;
+                  color: #111827;
+            }
 
-    .options a {
-      color: #2563eb;
-      text-decoration: none;
-    }
+            .btn {
+                  text-decoration: none;
+                  background: #4f46e5;
+                  color: white;
+                  padding: 10px 18px;
+                  border-radius: 10px;
+                  font-weight: 600;
+                  transition: background 0.2s ease;
+            }
 
-    .login-btn {
-      width: 100%;
-      padding: 13px;
-      border: none;
-      border-radius: 10px;
-      background: #2563eb;
-      color: white;
-      font-size: 17px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .login-btn:hover {
-      background: #1d4ed8;
-    }
-
-    .signup {
-      text-align: center;
-      margin-top: 25px;
-      color: #64748b;
-    }
-
-    .signup a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    @media (max-width: 450px) {
-      .login-container {
-        width: 90%;
-        padding: 30px 20px;
-      }
-    }
+            .btn:hover {
+                  background: #4338ca;
+            }
