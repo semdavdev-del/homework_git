@@ -59,7 +59,6 @@ body {
   color: #2563eb;
 }
 
-/* Active underline */
 .nav-menu a.active::after {
   content: "";
   position: absolute;
@@ -70,7 +69,6 @@ body {
   background: #2563eb;
 }
 
-/* Right Actions */
 .nav-actions {
   display: flex;
   align-items: center;
@@ -102,7 +100,6 @@ body {
   background: #1d4ed8;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -116,9 +113,7 @@ body {
     font-size: 20px;
   }
 }
-/* ========================================
-   RESET & GLOBAL STYLES
-   ======================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -136,9 +131,6 @@ body {
     background-color: #f8f9fa;
 }
 
-/* ========================================
-   TYPOGRAPHY
-   ======================================== */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-bottom: 1rem;
@@ -186,9 +178,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ========================================
-   NAVIGATION
-   ======================================== */
 nav {
     position: fixed;
     top: 0;
@@ -234,9 +223,6 @@ nav a.active {
     color: white;
 }
 
-/* ========================================
-   MAIN LAYOUT
-   ======================================== */
 main {
     margin-top: 70px;
     min-height: calc(100vh - 70px);
@@ -255,5 +241,3 @@ main {
 .section:nth-child(even) {
     background-color: #fff;
 }
-
-
